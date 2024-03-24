@@ -23,7 +23,7 @@ public class Embeds extends ListenerAdapter {
     Button checkProfileButton = Button.primary("check-profile","Check Profile");
     Button sendMessageButton = Button.primary("send-msg","Send Message");
     Button decryptButton = Button.primary("decrypt-msg","Decrypt Msg");
-    long guildId = 1219748480378208276L; // Replace YOUR_GUILD_ID with the actual guild ID
+    long guildId = 1; // Replace YOUR_GUILD_ID with the actual guild ID
 
 
     @Override
