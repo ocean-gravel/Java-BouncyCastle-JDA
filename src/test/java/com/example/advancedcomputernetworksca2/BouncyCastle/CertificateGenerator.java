@@ -30,5 +30,4 @@ public class CertificateGenerator {
         return new JcaX509CertificateConverter().setProvider("BC").getCertificate(certificateBuilder
                 .build(contentSigner));
     }
-
 }

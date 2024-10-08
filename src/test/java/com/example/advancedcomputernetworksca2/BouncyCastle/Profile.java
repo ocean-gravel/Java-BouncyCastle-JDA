@@ -13,15 +13,36 @@ public class Profile {
         IT DOESN'T CONTAIN THE PRIVATE KEY: THAT IS FOR THE END USER TO KNOW ONLY AND ANYONE WHO FINDS IT :3
 
      */
-    String name;
-    X509Certificate certificate;
-    PublicKey publicKey;
+    private final String name;
+    private final X509Certificate certificate;
+    private final PublicKey publicKey;
 
     private PrivateKey privateKey;
-    Profile(String name, X509Certificate certificate, PublicKey publicKey ){
+    public Profile(String name, X509Certificate certificate, PublicKey publicKey){
         this.name = name;
         this.certificate = certificate;
         this.publicKey = publicKey;
 
+    }
+    @Override
+    public String toString() {
+        return "Profile{" +
+                "Name='" + name + '\'' +
+                ", certificate=" + certificate.toString() +
+                ", publicKey=" + publicKey.toString() +
+                '}';
+    }
+
+    // Getters
+    public String getName() {
+        return name;
+    }
+
+    public X509Certificate getCertificate() {
+        return certificate;
+    }
+
+    public PublicKey getPublicKey() {
+        return publicKey;
     }
 }
