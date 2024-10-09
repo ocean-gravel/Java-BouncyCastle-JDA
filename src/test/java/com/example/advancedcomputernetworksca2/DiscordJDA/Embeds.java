@@ -76,6 +76,7 @@ public class Embeds extends ListenerAdapter {
     KeyPair keyPair;
 
     String nameFromCommand;
+    long guildId = 1;
 
 
 
